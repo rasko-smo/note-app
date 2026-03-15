@@ -7,15 +7,15 @@ function Layout() {
       <header className="layout__header">
         <div className="layout__header-content">
           <div className="layout__logo">
-            <Link className="layout__logo-link">
+            <Link className="layout__logo-link" to="/">
               <h1>NoteSpace</h1>
             </Link>
           </div>
           <nav className="layout__nav">
-            <Link className="layout__nav-link">
+            <Link className="layout__nav-link" to="/">
               ホーム
             </Link>
-            <Link className="layout__nav-link">
+            <Link className="layout__nav-link" to="/new">
               新規作成
             </Link>
           </nav>
