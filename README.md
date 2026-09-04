@@ -1,16 +1,32 @@
-# React + Vite
+# NoteSpace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+学習メモを記録・整理するために作成した、React + Vite のメモアプリです。
 
-Currently, two official plugins are available:
+## 機能
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 一覧画面
 
-## React Compiler
+メモをカード形式で一覧表示し、検索・ページ移動・削除ができます。
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![一覧画面](docs/images/note-list.png)
 
-## Expanding the ESLint configuration
+### 詳細画面
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+メモのタイトルと本文を確認・編集し、保存または削除できます。
+
+![詳細画面](docs/images/note-detail.png)
+
+### 新規作成画面
+
+タイトルと本文を入力して、新しいメモを保存できます。
+
+![新規作成画面](docs/images/note-create.png)
+
+## 起動方法
+
+```bash
+npm install
+npm run dev
+```
+
+表示されたローカルURLをブラウザで開きます。メモ一覧・保存機能には、`http://localhost:3001` でAPIサーバーを起動してください。
